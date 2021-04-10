@@ -36,4 +36,7 @@ public class Cd extends Publicacion{
         this.tmpRep = tmpRep;
     }
     
+//  public double precioVenta(Libro x, Libro y){
+//      return (this.precio + x.getPrecio() + y.getPrecio());    
+//  }  
 }

@@ -16,13 +16,19 @@ public class Principal {
         Libro l1 = new Libro("POO C++",55,100);
         Libro l2 = new Libro("Señor de los Anillos");
         Cd c1 = new Cd();
+        Cd c2 = new Cd();
         
         //pu1.mostrar();
         l1.mostrar();
-        c1.mostrarCd();
         l2.mostrar();
+        c1.mostrarCd();
         //b) y c)
         System.out.println(c1.getTitulo()+" " +c1.getPrecio());
         //d)forma 1
+        System.out.println("\nPrecio total : " + l1.precioVenta(l2,c1));
+        
+        System.out.println("\nPrecio total : " + c1.precioVenta(l2, l1));
+        
+        System.out.println("\nPrecio total : " + l2.precioVenta(c2, c1));
     }
 }

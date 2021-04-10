@@ -41,6 +41,9 @@ public class Publicacion {
             System.out.println(a[i][0] + "\t" + a[i][1]);
         }
     }
+    public double precioVenta(Publicacion x, Publicacion y){
+        return (this.precio + x.precio + y.precio);
+    }
 
     public String getTitulo() {
         return titulo;

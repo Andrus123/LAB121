@@ -32,6 +32,9 @@ public class Libro extends  Publicacion{
                            //lo llamamos con super
         System.out.println("Nro de Paginas: " + this.nroPag);
     }
+    //  public double precioVenta(Libro x, Libro y){
+//      return (this.precio + x.getPrecio() + y.getPrecio());    
+//  }  
     
     public int getNroPag() {
         return nroPag;
