@@ -78,4 +78,10 @@ public class Programa {
     public void setPrecio(double p) {
         this.precio = p;
     }
+    //c)
+    public void camVersion(){
+        System.out.println("Actualizacion de versión: ");
+        setVersion(Leer.datoDouble());
+        this.mostrar();
+    }
 }

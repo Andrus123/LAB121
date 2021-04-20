@@ -68,4 +68,13 @@ public class Juego extends Programa{
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+    
+    public void compJuego(Juego x, Juego y)
+    {
+        if(x.nroPlataformas>y.nroPlataformas){
+            System.out.println(x.getNombre()+" está disponible en "+x.nroPlataformas +" plataformas");
+        }else{
+            System.out.println(y.getNombre()+" está disponible en "+y.nroPlataformas +" plataformas");
+        }
+    }
 }
