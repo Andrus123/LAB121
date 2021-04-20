@@ -9,6 +9,6 @@ package Organizacion;
  *
  * @author Andrés Aquin
  */
-public class Colegio {
+public class Colegio extends EntidadEducacion{
     private String turno;
 }

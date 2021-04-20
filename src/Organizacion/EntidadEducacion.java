@@ -9,7 +9,7 @@ package Organizacion;
  *
  * @author Andrés Aquin
  */
-public class EntidadEducacion {
+public class EntidadEducacion extends Organizacion{
     private String nombre;
     private int añoFundacion;
     private String tipo;

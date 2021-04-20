@@ -9,6 +9,9 @@ package Organizacion;
  *
  * @author Andrés Aquin
  */
-public class Instituto extends EntidadEducacion{
-    private String[] Esp = new String[30];
+public class Principal {
+    public static void main(String[] args){
+        Organizacion o1 = new Organizacion();
+        o1.mostrar();
+    }
 }

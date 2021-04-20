@@ -9,6 +9,6 @@ package Organizacion;
  *
  * @author Andrés Aquin
  */
-public class Normal {
+public class Normal extends EntidadEducacion{
     private String tipo;
 }
