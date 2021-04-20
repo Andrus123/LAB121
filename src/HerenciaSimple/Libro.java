@@ -25,7 +25,7 @@ public class Libro extends  Publicacion{
         this.nroPag =  50;
     }
     
-    
+    @Override
     public void mostrar(){
         //en C# se usa el termino "base"
         super.mostrar();  //Para evitar que este metodo se prefiera antes que el de padre(por que tienen el mismo nombre)
