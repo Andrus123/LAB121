@@ -26,6 +26,7 @@ public class Juego extends Programa{
         this.categoria = "PC";
         this.descripcion = "LOL es un MOPG de 5v5 en linea";
     }
+    @Override
     public void leer(){
         super.leer();
         System.out.println("Nombre del Juego: ");
@@ -36,6 +37,7 @@ public class Juego extends Programa{
         System.out.println("Descripción: ");
         setDescripcion(Leer.dato());
     }
+    @Override
     public void mostrar(){
         super.mostrar();
         System.out.println("Juego: "+getNombre());
