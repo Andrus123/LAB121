@@ -11,7 +11,11 @@ package Organizacion;
  */
 public class Principal {
     public static void main(String[] args){
-        Organizacion o1 = new Organizacion();
-        o1.mostrar();
+        Organizacion or1 = new Organizacion();
+        Normal n1 = new Normal();
+        Instituto in1 = new Instituto();
+        Colegio c1 = new Colegio();
+        n1.mostrar();
+        c1.mostrar();
     }
 }
