@@ -14,7 +14,16 @@ public class Instituto extends EntidadEducacion{
     private String[] esp = new String[30];
     
     public Instituto(){
-        super();
+        super("i11",2018,"Privado");
+        this.NroProfesores = 3;
+        this.prf[0]="Lic. Chamon";   this.prf[2]="Lic. Gino"; 
+        this.prf[1]="Mg. Velasques"; 
+        this.nroEstudiantes = 8;
+        this.est[0]="Jhon";   this.est[4]="Mauren";
+        this.est[1]="Lucas";  this.est[5]="Kelly";
+        this.est[2]="Carla";  this.est[6]="Chris";
+        this.est[3]="Paty";   this.est[7]="Marcelo";
+        
         this.nesp = 5;
         this.esp[0] = "Física";
         this.esp[1] = "Matemática";
@@ -58,12 +67,19 @@ public class Instituto extends EntidadEducacion{
     }
     @Override
     public void mostrar(){
-        super.mostrar();
         System.out.println("Instituto: "+getNombre());
+        super.mostrar();
         System.out.println("# de Especialidades: "+getNesp());
         for(int i=0;i<nesp;i++){
             System.out.println(esp[i]);
         }
+    }
+    public void modaño(){
+        System.out.println("Ingrese el nuevo año de fundación");
+        int x = Leer.datoInt();
+        setAñoFundacion(x);
+        System.out.println("Institución: "+getNombre()+" Año de fundación: "+
+        getAñoFundacion());
     }
     
 }
