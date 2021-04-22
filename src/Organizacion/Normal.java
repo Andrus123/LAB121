@@ -19,9 +19,9 @@ public class Normal extends EntidadEducacion{
         this.prf[0]="Lic. Chamon";   this.prf[2]="Lic. Jimenez"; 
         this.prf[1]="Mg. Alvarez"; this.prf[3]="Lic. Gonzales"; 
         this.nroEstudiantes = 4;
-        this.est[0]="Carlos";   
+        this.est[0]="Pablo";   
         this.est[1]="Lucas";  
-        this.est[2]="Pablo";  
+        this.est[2]="Carlos";  
         this.est[3]="Marta";  
     }
 
@@ -51,6 +51,26 @@ public class Normal extends EntidadEducacion{
     }
     
     public void ordenar(){
-        
+        for(int i=0;i<getNroEstudiantes();i++){
+            for(int j=0;j<getNroEstudiantes()&& i!=j;j++){
+                if(est[i].compareToIgnoreCase(est[j])<0){
+                    String aux = est[i];
+                    est[i] = est[j];
+                    est[j] = aux;
+                }
+            }
+        }
+    }
+    public void dardbaja(String x){
+        for(int i=0; i<getNroProfesores();i++){
+            if(x.equals(prf[i])){
+                prf[i]="";
+                NroProfesores = NroProfesores - 1;
+            }
+        }
+        System.out.println("Nueva Planilla: ");
+        for(int i=0; i<getNroProfesores();i++){
+            System.out.println(prf[i]);
+        }
     }
 }

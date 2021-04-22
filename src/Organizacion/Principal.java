@@ -73,5 +73,11 @@ public class Principal {
         in1.modaño();
         //f)
         c1.agregarProf();
+        //g)
+        n1.ordenar();
+        System.out.println("Ordenado: ");
+        n1.mostrar();
+        //h)
+        n1.dardbaja("Lic. Gonzales");
     }
 }
