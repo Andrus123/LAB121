@@ -59,6 +59,14 @@ public class Vehiculo {
         }
         System.out.println("El precio total de todos los neumaticos es: "+total);
     }
+    public void Detneumatico(String z){
+        int c =0;
+        for(int i=0; i<this.nroNeumaticos;i++){
+            if(this.n[i].getMarca()==z){
+                c++;
+            }
+        }System.out.println("Cantidad de neumaticos de marca: "+z+" = "+c);
+    }
 
     public String getMarca() {
         return marca;

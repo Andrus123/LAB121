@@ -18,5 +18,9 @@ public class Principal {
         v1.Compcolor("azul");
         //c)Sumar los precios de los neumaticos
         v1.TotalNeum();
+        //d)Determinar si alguno de los neumaticos tiene la marca z
+        v1.Detneumatico("Goodyear");
+        //e) Cambiar el color de la carroceria
+        
     }
 }
