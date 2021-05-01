@@ -23,6 +23,7 @@ public class Principal {
         //e)Cambiar el color de la carroceria
         v1.cambiarColor("Negro");
         //f)Instanciar un vehiculo, dado dos vehiculos mostrar la placa de mas neumaticos
-        
+        Vehiculo v2 = new Vehiculo("Ford","GIG-777",7);
+        v1.MayorNeumaticos(v1, v2);
     }
 }

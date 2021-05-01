@@ -71,6 +71,13 @@ public class Vehiculo {
         c.setColor(colornuevo);
         c.Mostrar();
     }
+    public void MayorNeumaticos(Vehiculo x, Vehiculo y){
+        if(x.getNroNeumaticos()>y.getNroNeumaticos()){
+            System.out.println("Placa del Vehiculo con más neumáticos: "+x.getPlaca());
+        }else{
+            System.out.println("Placa del Vehiculo con más neumáticos: "+y.getPlaca());
+        }
+    }
 
     public String getMarca() {
         return marca;
