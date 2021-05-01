@@ -51,7 +51,6 @@ public class Vehiculo {
                                 +c.getColor());
         }
     }
-    
     public void TotalNeum(){
         double total = 0;
         for(int i=0; i<this.nroNeumaticos;i++){
