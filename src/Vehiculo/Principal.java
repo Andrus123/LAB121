@@ -20,7 +20,9 @@ public class Principal {
         v1.TotalNeum();
         //d)Determinar si alguno de los neumaticos tiene la marca z
         v1.Detneumatico("Goodyear");
-        //e) Cambiar el color de la carroceria
+        //e)Cambiar el color de la carroceria
+        v1.cambiarColor("Negro");
+        //f)Instanciar un vehiculo, dado dos vehiculos mostrar la placa de mas neumaticos
         
     }
 }

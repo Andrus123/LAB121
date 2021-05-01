@@ -67,6 +67,10 @@ public class Vehiculo {
             }
         }System.out.println("Cantidad de neumaticos de marca: "+z+" = "+c);
     }
+    public void cambiarColor(String colornuevo){
+        c.setColor(colornuevo);
+        c.Mostrar();
+    }
 
     public String getMarca() {
         return marca;
