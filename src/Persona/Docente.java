@@ -34,7 +34,16 @@ public class Docente extends Persona {
     public void setIdDocente(int idDocente) {
         this.idDocente = idDocente;
     }
+    public void leer(){
+        System.out.println("Nombre del Docente: ");
+        setNombre(Leer.dato());
+        System.out.println("ID del Docente: ");
+        setIdDocente(Leer.datoInt());
+        System.out.println("Genero: ");
+        setSexo(Leer.dato());
+    }
     
+    @Override
     public void mostrar(){
         super.mostrar();
         System.out.println("ID del Docente: "+getIdDocente());
