@@ -51,7 +51,7 @@ public class Docente extends Persona {
     public void VctorDoc(Docente[] doc,int n){
         for (int i = 0;i<n; i++){
             doc[i] = new Docente();
-            //doc[i].leer();  //Para ingresar nuevos docentes
+            doc[i].leer();  //Para ingresar nuevos docentes
             doc[i].mostrar();
         }
     }

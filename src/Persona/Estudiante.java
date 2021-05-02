@@ -105,5 +105,13 @@ public class Estudiante extends Persona {
             }
         }
     }
+    public void MatriculaF(Estudiante[] x){
+                System.out.println("Estudiantes de genero Femenino: ");
+        for(int i=0; i<x.length; i++){
+            if(x[i].getSexo().equals("F")){
+                System.out.println(x[i].getMatricula());
+            }
+        }
+    }
     
 }
