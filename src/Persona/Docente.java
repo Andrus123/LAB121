@@ -10,9 +10,10 @@ package Persona;
  * @author Andrés Aquin
  */
 public class Docente extends Persona {
+
     private int idDocente;
-    
-    public Docente(){
+
+    public Docente() {
         this.nombre = "Lic. Marcelo Aruquipa";
         this.sexo = "Masculino";
         this.idDocente = 7753433;
@@ -34,7 +35,8 @@ public class Docente extends Persona {
     public void setIdDocente(int idDocente) {
         this.idDocente = idDocente;
     }
-    public void leer(){
+
+    public void leer() {
         System.out.println("Nombre del Docente: ");
         setNombre(Leer.dato());
         System.out.println("ID del Docente: ");
@@ -42,26 +44,30 @@ public class Docente extends Persona {
         System.out.println("Genero: ");
         setSexo(Leer.dato());
     }
-    
+
     @Override
-    public void mostrar(){
+    public void mostrar() {
         super.mostrar();
-        System.out.println("ID del Docente: "+getIdDocente());
+        System.out.println("ID del Docente: " + getIdDocente());
     }
-    public void VctorDoc(Docente[] doc,int n){
-        for (int i = 0;i<n; i++){
+
+    public void VctorDoc(Docente[] doc, int n) {
+        for (int i = 0; i < n; i++) {
             doc[i] = new Docente();
             doc[i].leer();  //Para ingresar nuevos docentes
+        }
+        for (int i = 0; i < n; i++) {
             doc[i].mostrar();
         }
     }
-    public void Idimpar(Docente[] x){
+
+    public void Idimpar(Docente[] x) {
         System.out.println("Docentes con id terminación impar: ");
-        for(int i=0; i<x.length;i++){
+        for (int i = 0; i < x.length; i++) {
             int udig = 0;
-            udig = x[i].idDocente%10;
-            if(udig%2!=0){
-                System.out.println(x[i].nombre+" con el IDDocente: "+x[i].idDocente);
+            udig = x[i].idDocente % 10;
+            if (udig % 2 != 0) {
+                System.out.println(x[i].nombre + " con el IDDocente: " + x[i].idDocente);
             }
         }
     }
