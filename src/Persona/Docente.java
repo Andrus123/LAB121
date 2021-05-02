@@ -15,7 +15,7 @@ public class Docente extends Persona {
     public Docente(){
         this.nombre = "Lic. Marcelo Aruquipa";
         this.sexo = "Masculino";
-        this.idDocente = 7753434;
+        this.idDocente = 7753433;
     }
 
     public Docente(int idDocente) {
@@ -53,6 +53,16 @@ public class Docente extends Persona {
             doc[i] = new Docente();
             //doc[i].leer();  //Para ingresar nuevos docentes
             doc[i].mostrar();
+        }
+    }
+    public void Idimpar(Docente[] x){
+        System.out.println("Docentes con id terminación impar: ");
+        for(int i=0; i<x.length;i++){
+            int udig = 0;
+            udig = x[i].idDocente%10;
+            if(udig%2!=0){
+                System.out.println(x[i].nombre+" con el IDDocente: "+x[i].idDocente);
+            }
         }
     }
 }
