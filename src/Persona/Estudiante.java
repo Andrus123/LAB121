@@ -12,6 +12,7 @@ package Persona;
 public class Estudiante extends Persona {
     private int matricula;
     private int [] nota = new int[7];
+    private int prom;
     
     public Estudiante(){
         this.ci = 10014246;
@@ -22,9 +23,13 @@ public class Estudiante extends Persona {
         this.nota[1]=85;  //LAB121
         this.nota[2]=90;  //FIS122
         this.nota[3]=67;  //LAB122
-        this.nota[4]=71;  //MAT123
+        this.nota[4]=85;  //MAT123
         this.nota[5]=85;  //MAT124
         this.nota[6]=80;  //MAT125
+        for(int i=0; i<7;i++){
+            this.prom = prom + nota[i];
+        }
+        this.prom = prom/7; 
     }
 
     public Estudiante(int matricula) {
@@ -62,6 +67,12 @@ public class Estudiante extends Persona {
         System.out.print(" | MAT123: "+nota[4]);
         System.out.print(" | MAT124: "+nota[5]);
         System.out.println(" | MAT125: "+nota[6]);
+        prom = 0;
+        for(int i=0; i<7;i++){
+            this.prom = prom + nota[i];
+        }
+        this.prom = prom/7;
+        System.out.println("Promedio: "+prom);
     }
     public void leer(){
         System.out.println("Nombre estudiante: ");
@@ -77,4 +88,22 @@ public class Estudiante extends Persona {
             nota[i] = Leer.datoInt();
         }
     }
+    public void VctorEst(Estudiante [] est, int n) {
+        for (int i = 0; i < n; i++) {
+                est[i] = new Estudiante();
+                est[i].leer(); //Para ingresar nuevos estudiantes
+        }
+        for(int i = 0; i<n;i++){
+            est[i].mostrar();
+        }
+    }
+    public void Mayornota(Estudiante[] x){
+        for(int i=0; i<x.length;i++){
+            if(x[i].prom>80){
+                System.out.println("Estudiantes con la nota más alta: ");
+                System.out.println(x[i].nombre+" con "+x[i].prom);
+            }
+        }
+    }
+    
 }

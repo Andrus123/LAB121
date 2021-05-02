@@ -10,28 +10,16 @@ package Persona;
  * @author Andrés Aquin
  */
 public class Principal {
-
-    public static void VctorEst(int n) {
-        Estudiante[] est = new Estudiante[5];
-        for (int i = 0; i < n; i++) {
-                est[i] = new Estudiante();
-                //est[i].leer(); //Para ingresar nuevos estudiantes
-                est[i].mostrar();
-        }
-    }
-    public static void VctorDoc(int n){
-        Docente[] doc = new Docente[5];
-        for (int i = 0;i<n; i++){
-            doc[i] = new Docente();
-            //doc[i].leer();  //Para ingresar nuevos docentes
-            doc[i].mostrar();
-        }
-    }
-
     public static void main(String[] args) {
+        Estudiante e1 = new Estudiante();
+        Docente d1 = new Docente();
         // Crear e instanciar un vector con 5 objetos Estudiante
-        VctorEst(5);
+        Estudiante[] est = new Estudiante[5];
+        e1.VctorEst(est, 5);
         // Crear e instanciar un vector con 5 objetos Docente
-        VctorDoc(5);
+        Docente[] doc = new Docente[5];
+        d1.VctorDoc(doc, 5);
+        //Mostrar a los estudiantes que tienen la nota más alta
+        e1.Mayornota(est);
     }
 }
