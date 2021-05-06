@@ -12,8 +12,9 @@ package Cine;
 public class Actor extends Persona{
     private String personaje;
     
-    public Actor(String nombre){
+    public Actor(String nombre, String personaje){
         super(nombre);
+        this.personaje = personaje;
     }
     
     public void mostrar(){

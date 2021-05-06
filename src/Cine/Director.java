@@ -12,8 +12,9 @@ package Cine;
 public class Director extends Persona {
     private String tipo;
     
-    public Director(String nombre){
+    public Director(String nombre, String tipo){
         super(nombre);
+        this.tipo = tipo;
     }
     
     public void mostrar(){
