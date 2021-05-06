@@ -9,6 +9,23 @@ package Cine;
  *
  * @author Andrés Aquin
  */
-public class Director {
+public class Director extends Persona {
+    private String tipo;
     
+    public Director(String nombre){
+        super(nombre);
+    }
+    
+    public void mostrar(){
+        super.mostrar();
+        System.out.println("Director: " + getTipo());
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

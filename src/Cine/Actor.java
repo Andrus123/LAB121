@@ -16,4 +16,16 @@ public class Actor extends Persona{
         super(nombre);
     }
     
+    public void mostrar(){
+        super.mostrar();
+        System.out.println("Personaje: " + getPersonaje());
+    }
+
+    public String getPersonaje() {
+        return personaje;
+    }
+
+    public void setPersonaje(String personaje) {
+        this.personaje = personaje;
+    }
 }
