@@ -11,26 +11,40 @@ package Parque;
  */
 public class AtraccionParque {
     private String nombre;
-    Niño N1;
-    Niño N2;
-    Niño N3;
+    private int nnios;
+    Niño[]ni = new Niño[30]; 
     
     public AtraccionParque(){
-        this.nombre = nombre;
+        this.nombre = "Tobogan";
+        this.nnios = 0;
     }
-
-    public AtraccionParque(String nombre) {
-        this.nombre = nombre;
+    public AtraccionParque(String nom){
+        this.nombre = nom;
+        this.nnios = 0;
+    }
+    public void adiNiño(Niño x, Niño y, Niño z){
+        ni[nnios] = x;
+        nnios++;
+        ni[nnios] = y;
+        nnios++;
+        ni[nnios] = z;
+        nnios++;
+    }
+    public void mostrar(){
+        System.out.println("\nAtraccion: "+getNombre());
+        System.out.println("N° de Niños: "+getNnios());
+        for (int i = 0; i < getNnios(); i++) {
+            ni[i].mostrar();
+        }
+    }
+    public void verificarniños(){
+        for (int i = 0; i < getNnios(); i++) {
+            if(getNi()[i].edad>5 && getNi()[i].getE().getTamaño()>70){
+                ni[i].mostrar();
+            }
+        }
     }
     
-    
-    public AtraccionParque(Niño n1, Niño n2, Niño n3){
-        this.nombre = "Salas VR";
-        N1 = n1;
-        N2 = n2;
-        N3 = n3;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -39,35 +53,19 @@ public class AtraccionParque {
         this.nombre = nombre;
     }
 
-    public Niño getN1() {
-        return N1;
+    public int getNnios() {
+        return nnios;
     }
 
-    public void setN1(Niño N1) {
-        this.N1 = N1;
+    public void setNnios(int nnios) {
+        this.nnios = nnios;
     }
 
-    public Niño getN2() {
-        return N2;
+    public Niño[] getNi() {
+        return ni;
     }
 
-    public void setN2(Niño N2) {
-        this.N2 = N2;
-    }
-
-    public Niño getN3() {
-        return N3;
-    }
-
-    public void setN3(Niño N3) {
-        this.N3 = N3;
-    }
-    
-    public void mostrar(){
-        System.out.println("Atraccion: "+getNombre());
-        System.out.println("Niños: ");
-        N1.mostrar();
-        N2.mostrar();
-        N3.mostrar();
+    public void setNi(Niño[] ni) {
+        this.ni = ni;
     }
 }

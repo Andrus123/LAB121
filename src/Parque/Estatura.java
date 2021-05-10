@@ -13,7 +13,7 @@ public class Estatura {
     private int tamaño;
     
     public Estatura(){
-        this.tamaño = 1;
+        this.tamaño = 100;
     }
 
     public Estatura(int tam) {

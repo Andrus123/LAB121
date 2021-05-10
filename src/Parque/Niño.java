@@ -21,10 +21,11 @@ public class Niño extends Persona{
         E = new Estatura();
     }
 
-    public Niño(String nomMadre, String nomPadre, String nombre, int edad) {
+    public Niño(String nomMadre, String nomPadre, String nombre, int edad, Estatura E) {
         super(nombre, edad);
         this.nomMadre = nomMadre;
         this.nomPadre = nomPadre;
+        this.E = E;
     }
 
     public String getNomMadre() {

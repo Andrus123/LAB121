@@ -14,7 +14,7 @@ public class Persona {
     protected int edad;
     
     public Persona(){
-        this.nombre = "Billy";
+        this.nombre = "Carl Jr";
         this.edad = 12;
     }
 
