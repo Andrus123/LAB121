@@ -14,8 +14,30 @@ public class Webinar {
     private int nt;
     private Invitado[]I = new Invitado[30];
     
-    public Webinar(){
-        
+    public Webinar(String n, String eo){
+        nt = 0;
+        nombre = n;
+        entidadOrganizadora = eo;
+    }
+    public void adiInvitado(Invitado x){
+        I[nt] = x;
+        nt++;
+    }
+    public void mostrar(){
+        System.out.println("Nombre: "+getNombre());
+        System.out.println("Entidad Organizadora: "+getEntidadOrganizadora());
+        System.out.println("N° de invitados: "+getNt());
+        for (int i = 0; i < getNt(); i++) {
+            I[i].mostrar();
+        }
+    }
+    public boolean verificarInvitado(Invitado X){
+        for (int i = 0; i < getNt(); i++) {
+            if(I[i].getNombre().equals(X.getNombre()) && 
+                    I[i].getFecha().equals(X.getFecha())&& I[i].getLugarTrabajo().equals(X.getLugarTrabajo()))
+                return true;
+        }
+        return false;
     }
 
     public String getNombre() {

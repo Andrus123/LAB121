@@ -11,10 +11,17 @@ package Webinar;
  */
 public class Invitado extends Profesional{
     private String nombre,fecha,hora,link;
-    private Tema t = new Tema();
+    private Tema T = new Tema();
     
-    public Invitado(String n, String f, String h, String l, Tema t){
-        
+    public Invitado(String n, String f, String h, String l, Tema x, String t, String lugar, String c){
+        nombre = n;
+        fecha = f;
+        hora = h;
+        link = l;
+        T = x;
+        titulo = t;
+        lugarTrabajo = lugar;
+        cargo = c;
     }
 
     public String getNombre() {
@@ -50,12 +57,22 @@ public class Invitado extends Profesional{
     }
 
     public Tema getT() {
-        return t;
+        return T;
     }
 
-    public void setT(Tema t) {
-        this.t = t;
+    public void setT(Tema T) {
+        this.T = T;
     }
-    
+    public void mostrar(){
+        System.out.println("Nombre: "+getNombre());
+        System.out.println("Fecha: "+getFecha());
+        System.out.println("Hora: "+getHora());
+        System.out.println("Link: "+getLink());
+        System.out.println("Tema: "+ T.getTitulo());
+        System.out.println("Titulo: "+ getTitulo());
+        System.out.println("LugarTrabajo: "+ getLugarTrabajo());
+        System.out.println("Cargo: "+ getCargo());
+        System.out.println("");
+    }
     
 }

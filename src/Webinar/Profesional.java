@@ -9,7 +9,7 @@ package Webinar;
  *
  * @author Andrés Aquin
  */
-public class Profesional {
+public abstract class Profesional {
     protected String titulo;
     protected String lugarTrabajo, cargo;
     
