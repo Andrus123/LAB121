@@ -22,7 +22,7 @@ public class AtraccionParque {
         this.nombre = nom;
         this.nnios = 0;
     }
-    public void adiNiño(Ninio x, Ninio y, Ninio z){
+    public void adiNinio(Ninio x, Ninio y, Ninio z){
         ni[nnios] = x;
         nnios++;
         ni[nnios] = y;
@@ -37,9 +37,9 @@ public class AtraccionParque {
             ni[i].mostrar();
         }
     }
-    public void verificarniños(){
+    public void verificarninios(){
         for (int i = 0; i < getNnios(); i++) {
-            if(getNi()[i].edad>5 && getNi()[i].getE().getTamaño()>70){
+            if(getNi()[i].edad>5 && getNi()[i].getE().getTamanio()>70){
                 ni[i].mostrar();
             }
         }

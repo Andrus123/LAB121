@@ -10,24 +10,24 @@ package Parque;
  * @author Andrés Aquin
  */
 public class Estatura {
-    private int tamaño;
+    private int tamanio;
     
     public Estatura(){
-        this.tamaño = 100;
+        this.tamanio = 100;
     }
 
     public Estatura(int tam) {
-        this.tamaño = tam;
+        this.tamanio = tam;
     }
 
-    public int getTamaño() {
-        return tamaño;
+    public int getTamanio() {
+        return tamanio;
     }
 
-    public void setTamaño(int tam) {
-        this.tamaño = tam;
+    public void setTamanio(int tam) {
+        this.tamanio = tam;
     }
     public void mostrar(){
-        System.out.println("Tamaño: "+getTamaño());
+        System.out.println("Tamaño: "+getTamanio());
     }
 }

@@ -25,8 +25,8 @@ public class Principal {
         Parque par1 = new Parque("Universal Studios");
         // Agregar 3 Niños a un objeto AtraccionParque y los otros 3 niños al 
         // otro AtraccionParque
-        ap1.adiNiño(n1, n2, n3);
-        ap2.adiNiño(n4, n5, n6);
+        ap1.adiNinio(n1, n2, n3);
+        ap2.adiNinio(n4, n5, n6);
        
         ap1.mostrar();
         ap2.mostrar();
@@ -49,11 +49,11 @@ public class Principal {
         AtraccionParque ap3 = new AtraccionParque();
         Parque par2 = new Parque("Carl Jr");
         
-        ap3.adiNiño(n7, n8, n9);
-        ap3.adiNiño(n10, n11, n12);
+        ap3.adiNinio(n7, n8, n9);
+        ap3.adiNinio(n10, n11, n12);
         par2.adiAtraccionParque(ap3);
         par2.mostrar();
         
-        par2.nombreParqueyNiño();
+        par2.nombreParqueyNinio();
     }
 }

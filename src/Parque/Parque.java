@@ -37,10 +37,10 @@ public class Parque {
     public void edadyestatura(){
         System.out.println("\nNiños mayores de 5 y con estatura mayor a 70 cm");
         for (int i = 0; i < getnAP(); i++) {
-            AP[i].verificarniños();
+            AP[i].verificarninios();
         }
     }
-    public void nombreParqueyNiño(){
+    public void nombreParqueyNinio(){
         System.out.println("Niños con la Promocion: ");
         for (int i = 0; i < getnAP(); i++) {
             if(AP[i].ni[i].nombre.equals(nombre)){
