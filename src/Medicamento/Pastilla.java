@@ -15,12 +15,13 @@ public class Pastilla extends Medicamento {
     private int mgramos;
 
     public Pastilla(String nombre, double precio, int cantidad, String tipo, int mgramos) {
-        super(nombre, precio, cantidad);
+        super(nombre, precio, cantidad,tipo);
         this.tipo = tipo;
         this.mgramos = mgramos;
     }
 
     public Pastilla(String tipo, int mgramos) {
+    	this.nombre = "Aspirina";
         this.tipo = "Antigripal";
         this.mgramos = 500;
     }

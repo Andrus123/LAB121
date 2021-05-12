@@ -13,17 +13,20 @@ public class Medicamento {
     protected String nombre;
     protected double precio;
     protected int cantidad;
+    protected String tipo;
     
     public Medicamento(){
         this.nombre = "Parecetamol";
         this.precio = 10.5;
         this.cantidad = 7;
+        this.tipo = "Painkiller";
     }
 
-    public Medicamento(String nombre, double precio, int cantidad) {
+    public Medicamento(String nombre, double precio, int cantidad,String tipo) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
+        this.tipo = tipo;
     }
 
     public String getNombre() {
@@ -49,7 +52,16 @@ public class Medicamento {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    public void leer(){
+    
+    public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public void leer(){
         System.out.println("Nombre del medicamento: ");
         setNombre(Leer.dato());
         System.out.println("Precio: ");
@@ -61,5 +73,6 @@ public class Medicamento {
         System.out.println("Medicamento: " + getNombre());
         System.out.println("Precio: " + getPrecio());
         System.out.println("Cantidad: " + getCantidad());
+        System.out.println("Tipo: "+getTipo());
     }
 }

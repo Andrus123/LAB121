@@ -30,5 +30,26 @@ public class Principal {
         }else{
             System.out.println("Son medicamentos para distintos propositos");
         }
+        
+        //a) Instanciar una Farmacia con N medicamentos
+        Farmacia f1 = new Farmacia("Farmacorp","Av. Prado",3);
+        f1.mostrar();
+        //b) Mostrar los medicamentos para resfrios
+        f1.medResfri();
+        //c) Mostrar los medicamentos para la tos
+        f1.medTos();
+        // EJERCICIO 2
+        //a) Instanciar un Objeto CadenaFarm y mostrar
+        CadenaFarm cadf1 = new CadenaFarm();
+        cadf1.mostrar();
+        //b) Mostrar los medicamentos para la tos, de la Sucursal x
+        cadf1.tosSucursal(2);
+        //c) Agregar un nuevo Medicamento a la sucursal numero x
+        cadf1.anadirMed(2);
+        //d) Se cierra la Sucursal numero x, llevar sus medicamentos a la sucursalnumero Y
+        
+        //EJERCICIO 3
+        //a) Instanciar un Objeto CadenaFarm y mostrar
+        
     }
 }

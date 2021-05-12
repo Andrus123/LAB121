@@ -14,13 +14,14 @@ public class Jarabe extends Medicamento{
     private int mlitros;
     
     public Jarabe(String nombre, double precio, int cantidad, String tipo, int mlitros){
-        super(nombre,precio,cantidad);
+        super(nombre,precio,cantidad,tipo);
         this.tipo = tipo;
         this.mlitros = mlitros;
     }
     public Jarabe(String tipo, int mlitros)
     {
-        this.tipo = "Antigripal";
+    	this.nombre = "Tosalcos";
+        this.tipo = "Para tos";
         this.mlitros = 700;
     }
 
