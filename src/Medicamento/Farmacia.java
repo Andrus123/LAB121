@@ -6,10 +6,12 @@ public class Farmacia {
 	private String direccion;
 	private int nromedicamentos;
 	private Medicamento[] M = new Medicamento[100];
+	private Personal P;
 	
 	public Farmacia() {
 		this.nombre = "Farmacias Bolivia";
 		this.direccion = "Av. Mariscal Santa Cruz";
+		this.P = new Personal();
 		this.nromedicamentos = 3;
 		for (int i = 0; i < this.nromedicamentos; i++) {
 			if(i%2==0) {
@@ -24,6 +26,7 @@ public class Farmacia {
 	public Farmacia(String nombre, String direccion, int nromedicamentos) {
 		this.nombre = nombre;
 		this.direccion = direccion;
+		this.P = new Personal();
 		this.nromedicamentos = nromedicamentos;
 		for (int i = 0; i < this.nromedicamentos; i++) {
 			if(i%2==0) {
@@ -38,6 +41,8 @@ public class Farmacia {
 	public void mostrar() {
 		System.out.println("\nFarmacia: "+getNombre());
 		System.out.println("Direccion: "+getDireccion());
+		System.out.println("Personal: ");
+		this.P.mostrar();
 		System.out.println("N° de medicamentos: "+getNromedicamentos());
 		for (int i = 0; i < getNromedicamentos(); i++) {
 			M[i].mostrar();
@@ -67,6 +72,9 @@ public class Farmacia {
 			}
 		}
 	}
+	public void mostrarJefe() {
+		P.mostrarJefe();
+	}
 	public void anadirMed() {
 		M[getNromedicamentos()] = new Medicamento();
 		M[getNromedicamentos()].leer();
@@ -95,6 +103,22 @@ public class Farmacia {
 
 	public void setNromedicamentos(int nromedicamentos) {
 		this.nromedicamentos = nromedicamentos;
+	}
+
+	public Medicamento[] getM() {
+		return M;
+	}
+
+	public void setM(Medicamento[] m) {
+		M = m;
+	}
+
+	public Personal getP() {
+		return P;
+	}
+
+	public void setP(Personal p) {
+		P = p;
 	}
 	
 	

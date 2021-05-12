@@ -48,6 +48,13 @@ public class CadenaFarm {
 			}
 		}
 	}
+	public void mostrarJefe() {
+		for (int i = 0; i < getNrofarm(); i++) {
+			System.out.println("Jefe de Sucursal # "+i);
+			F[i].mostrarJefe();
+		}
+		
+	}
 
 	public String getNombre() {
 		return nombre;

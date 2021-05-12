@@ -47,9 +47,11 @@ public class Principal {
         //c) Agregar un nuevo Medicamento a la sucursal numero x
         cadf1.anadirMed(2);
         //d) Se cierra la Sucursal numero x, llevar sus medicamentos a la sucursalnumero Y
-        
+       
         //EJERCICIO 3
         //a) Instanciar un Objeto CadenaFarm y mostrar
-        
+        //b) Mostrar al Jefe de Personal de cada sucursal
+        cadf1.mostrarJefe();
+        //c) Mostrar
     }
 }
