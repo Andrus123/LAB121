@@ -12,7 +12,7 @@ package Parque;
 public class AtraccionParque {
     private String nombre;
     private int nnios;
-    Niño[]ni = new Niño[30]; 
+    Ninio[]ni = new Ninio[30]; 
     
     public AtraccionParque(){
         this.nombre = "Tobogan";
@@ -22,7 +22,7 @@ public class AtraccionParque {
         this.nombre = nom;
         this.nnios = 0;
     }
-    public void adiNiño(Niño x, Niño y, Niño z){
+    public void adiNiño(Ninio x, Ninio y, Ninio z){
         ni[nnios] = x;
         nnios++;
         ni[nnios] = y;
@@ -61,11 +61,11 @@ public class AtraccionParque {
         this.nnios = nnios;
     }
 
-    public Niño[] getNi() {
+    public Ninio[] getNi() {
         return ni;
     }
 
-    public void setNi(Niño[] ni) {
+    public void setNi(Ninio[] ni) {
         this.ni = ni;
     }
 }

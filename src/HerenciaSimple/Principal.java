@@ -14,11 +14,12 @@ public class Principal {
         Publicacion pu1 = new Publicacion("Bended", 170.89);
         
         Libro l1 = new Libro("POO C++",55,100);
-        Libro l2 = new Libro("SeÃ±or de los Anillos");
+        Libro l2 = new Libro("Señor de los Anillos");
         Cd c1 = new Cd();
         Cd c2 = new Cd();
         
         //pu1.mostrar();
+        pu1.mostrar();
         l1.mostrar();
         l2.mostrar();
         c1.mostrarCd();

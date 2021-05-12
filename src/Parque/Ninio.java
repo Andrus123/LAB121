@@ -9,19 +9,19 @@ package Parque;
  *
  * @author Andrés Aquin
  */
-public class Niño extends Persona{
+public class Ninio extends Persona{
     private String nomMadre;
     private String nomPadre;
     private Estatura E;
     
-    public Niño(){
+    public Ninio(){
         super();
         this.nomMadre = "Susan";
         this.nomPadre = "Mark";
         E = new Estatura();
     }
 
-    public Niño(String nomMadre, String nomPadre, String nombre, int edad, Estatura E) {
+    public Ninio(String nomMadre, String nomPadre, String nombre, int edad, Estatura E) {
         super(nombre, edad);
         this.nomMadre = nomMadre;
         this.nomPadre = nomPadre;

@@ -1,8 +1,6 @@
 package Organizacion;
 
 
-import Medicamento.*;
-import Juego.*;
 import java.io.*;
 public class Leer
 {
@@ -71,7 +69,8 @@ public class Leer
     {
 	try
 	{
-	    Float f = new Float (dato ());
+	    @SuppressWarnings("deprecation")
+		Float f = new Float (dato ());
 	    return f.floatValue ();
 	}
 	catch (NumberFormatException e)
@@ -85,7 +84,8 @@ public class Leer
     {
 	try
 	{
-	    Double d = new Double (dato ());
+	    @SuppressWarnings("deprecation")
+		Double d = new Double (dato ());
 	    return d.doubleValue ();
 	}
 	catch (NumberFormatException e)

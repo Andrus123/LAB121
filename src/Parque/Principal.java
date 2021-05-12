@@ -12,12 +12,12 @@ package Parque;
 public class Principal {
     public static void main(String[] args){
         // Instanciar 6 objetos Niños, 2 objetos AtraccionParque y un objeto Parque
-        Niño n1 = new Niño("Carla", "Peter", "Pepito", 12, new Estatura(100));
-        Niño n2 = new Niño("Maria", "Juan", "Fernando", 11,new Estatura(80));
-        Niño n3 = new Niño("Laura", "Carlos", "Juanito", 9,new Estatura(65));
-        Niño n4 = new Niño("Patricia", "Chris", "Lucas", 10,new Estatura(80));
-        Niño n5 = new Niño("Maria", "Juan", "Kelly", 11,new Estatura(75));
-        Niño n6 = new Niño("Maria", "Juan", "Lorena", 5,new Estatura(50));
+        Ninio n1 = new Ninio("Carla", "Peter", "Pepito", 12, new Estatura(100));
+        Ninio n2 = new Ninio("Maria", "Juan", "Fernando", 11,new Estatura(80));
+        Ninio n3 = new Ninio("Laura", "Carlos", "Juanito", 9,new Estatura(65));
+        Ninio n4 = new Ninio("Patricia", "Chris", "Lucas", 10,new Estatura(80));
+        Ninio n5 = new Ninio("Maria", "Juan", "Kelly", 11,new Estatura(75));
+        Ninio n6 = new Ninio("Maria", "Juan", "Lorena", 5,new Estatura(50));
         
         AtraccionParque ap1 = new AtraccionParque("Salas 3D");
         AtraccionParque ap2 = new AtraccionParque("Montaña Rusa");
@@ -40,12 +40,12 @@ public class Principal {
         //Crear un objeto Parque igual que el inciso 1,2 y 3, pero solo con
         //constructores por defecto y mostrar los nombres de los padres de aquellos
         //Niños con mismo Nombre con el objeto Parque anteriormente creado
-        Niño n7 = new Niño();
-        Niño n8 = new Niño();
-        Niño n9 = new Niño();
-        Niño n10 = new Niño();
-        Niño n11 = new Niño();
-        Niño n12 = new Niño();
+        Ninio n7 = new Ninio();
+        Ninio n8 = new Ninio();
+        Ninio n9 = new Ninio();
+        Ninio n10 = new Ninio();
+        Ninio n11 = new Ninio();
+        Ninio n12 = new Ninio();
         AtraccionParque ap3 = new AtraccionParque();
         Parque par2 = new Parque("Carl Jr");
         

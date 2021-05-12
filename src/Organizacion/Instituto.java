@@ -32,8 +32,8 @@ public class Instituto extends EntidadEducacion{
         this.esp[4] = "Informpatica";
     }
 
-    public Instituto(int nesp, String nombre, int añoFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
-        super(nombre, añoFundacion, tipo, NroProfesores, nroEstudiantes);
+    public Instituto(int nesp, String nombre, int anioFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
+        super(nombre, anioFundacion, tipo, NroProfesores, nroEstudiantes);
         this.nesp = nesp;
         for(int i=0;i<nesp;i++){
             this.esp[i]="";
@@ -74,12 +74,12 @@ public class Instituto extends EntidadEducacion{
             System.out.println(esp[i]);
         }
     }
-    public void modaño(){
+    public void modanio(){
         System.out.println("Ingrese el nuevo año de fundación");
         int x = Leer.datoInt();
-        setAñoFundacion(x);
+        setAnioFundacion(x);
         System.out.println("Institución: "+getNombre()+" Año de fundación: "+
-        getAñoFundacion());
+        getAnioFundacion());
     }
     
 }

@@ -14,7 +14,7 @@ public class Juego {
     private String nombre;
     private String categoria;
     private String version;
-    private int añoCreacion;
+    private int anioCreacion;
 
     public String getNombre() {
         return nombre;
@@ -40,26 +40,26 @@ public class Juego {
         this.version = version;
     }
 
-    public int getAñoCreacion() {
-        return añoCreacion;
+    public int getAnioCreacion() {
+        return anioCreacion;
     }
 
-    public void setAñoCreacion(int añoCreacion) {
-        this.añoCreacion = añoCreacion;
+    public void setAnioCreacion(int anioCreacion) {
+        this.anioCreacion = anioCreacion;
     }
 
     public Juego() {
         nombre = "fortnite";
         categoria = "consola";
         version = "3.0";
-        añoCreacion = 2014;
+        anioCreacion = 2014;
     }
 
-    public Juego(String nombre, String categoria, String version, int añoCreacion) {
+    public Juego(String nombre, String categoria, String version, int anioCreacion) {
         this.nombre = "starcraft";
         this.categoria = "pc";
         this.version = "3.0";
-        this.añoCreacion = 2005;
+        this.anioCreacion = 2005;
     }
 
     public void leer() {
@@ -70,19 +70,19 @@ public class Juego {
         System.out.println("version: ");
         this.version = Leer.dato();
         System.out.println("año de creacion: ");
-        this.añoCreacion = Leer.datoInt();
+        this.anioCreacion = Leer.datoInt();
     }
 
     public void mostrar() {
         System.out.println("Nombre: " + getNombre());
         System.out.println("categoria : " + getCategoria());
         System.out.println("version: " + getVersion());
-        System.out.println("año de creacion: " + getAñoCreacion());
+        System.out.println("año de creacion: " + getAnioCreacion());
     }
 
-    public void mismoaño(Juego j1, Juego j2) {
-        if (j1.añoCreacion == j2.añoCreacion) {
-            System.out.println("fueron lanzados el mismo año");
+    public void mismoanio(Juego j1, Juego j2) {
+        if (j1.anioCreacion == j2.anioCreacion) {
+            System.out.println("fueron lanzados el mismo a�o");
         } else {
             System.out.println("Tienen distintas fechas de creación");
         }
@@ -101,7 +101,7 @@ public class Juego {
             System.out.println("Son de la misma version");
             c++;
         }
-        if(j1.getAñoCreacion() == j2.getAñoCreacion()){
+        if(j1.getAnioCreacion() == j2.getAnioCreacion()){
             System.out.println("Se crearon el mismo año");
             c++;
         }
@@ -111,8 +111,8 @@ public class Juego {
     }
     public void ascendente(Juego j1, Juego j2, Juego j3, Juego j4){
         String c = "";
-       if(j1.getAñoCreacion()<j2.getAñoCreacion()&&j1.getAñoCreacion()<j3.getAñoCreacion()
-               &&j1.añoCreacion<j4.getAñoCreacion()){
+       if(j1.getAnioCreacion()<j2.getAnioCreacion()&&j1.getAnioCreacion()<j3.getAnioCreacion()
+               &&j1.anioCreacion<j4.getAnioCreacion()){
            c = j1.getNombre() ;
            System.out.println("Primer lanzamiento" + c);
        }

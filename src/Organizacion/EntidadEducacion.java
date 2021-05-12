@@ -11,26 +11,26 @@ package Organizacion;
  */
 public class EntidadEducacion extends Organizacion{
     private String nombre;
-    private int añoFundacion;
+    private int anioFundacion;
     private String tipo;
     
     public EntidadEducacion(){
         super();
         this.nombre = "UMSA";
-        this.añoFundacion = 1830;
+        this.anioFundacion = 1830;
         this.tipo = "Publico";
     }
 
-    public EntidadEducacion(String nombre, int añoFundacion, String tipo) {
+    public EntidadEducacion(String nombre, int anioFundacion, String tipo) {
         this.nombre = nombre;
-        this.añoFundacion = añoFundacion;
+        this.anioFundacion = anioFundacion;
         this.tipo = tipo;
     }
 
-    public EntidadEducacion(String nombre, int añoFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
+    public EntidadEducacion(String nombre, int anioFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
         super(NroProfesores, nroEstudiantes);
         this.nombre = nombre;
-        this.añoFundacion = añoFundacion;
+        this.anioFundacion = anioFundacion;
         this.tipo = tipo;
     }
 
@@ -42,12 +42,12 @@ public class EntidadEducacion extends Organizacion{
         this.nombre = nombre;
     }
 
-    public int getAñoFundacion() {
-        return añoFundacion;
+    public int getAnioFundacion() {
+        return anioFundacion;
     }
 
-    public void setAñoFundacion(int añoFundacion) {
-        this.añoFundacion = añoFundacion;
+    public void setAnioFundacion(int anioFundacion) {
+        this.anioFundacion = anioFundacion;
     }
 
     public String getTipo() {
@@ -63,7 +63,7 @@ public class EntidadEducacion extends Organizacion{
         System.out.println("Nombre de la Entidad Educativa: ");
         setNombre(Leer.dato());
         System.out.println("Año de Fundación: ");
-        setAñoFundacion(Leer.datoInt());
+        setAnioFundacion(Leer.datoInt());
         System.out.println("Tipo de entidad: ");
         setTipo(Leer.dato());
     }
@@ -71,7 +71,7 @@ public class EntidadEducacion extends Organizacion{
     public void mostrar(){
         super.mostrar();
         System.out.println("Entidad Educativa: "+getNombre());
-        System.out.println("Año de Fundación: "+getAñoFundacion());
+        System.out.println("Anio de Fundación: "+getAnioFundacion());
         System.out.println("Tipo: "+getTipo());
     }
     

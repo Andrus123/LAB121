@@ -20,7 +20,7 @@ public class Principal {
         j2.leer();
         j2.mostrar();
         //b)verificar los dos juegos si se crearon el mismo año
-        j1.mismoaño(j1, j2);
+        j1.mismoanio(j1, j2);
         //c) verificar si tienen algun atributo igual
         j1.mismoatributo(j1, j2);
         //d)Orden ascendente acorde al año

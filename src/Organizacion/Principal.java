@@ -70,7 +70,7 @@ public class Principal {
         //c)
         findProf(n1,in1,c1);
         //d)
-        in1.modaño();
+        in1.modanio();
         //f)
         c1.agregarProf();
         //g)

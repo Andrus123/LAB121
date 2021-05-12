@@ -7,14 +7,14 @@ package Organizacion;
 
 /**
  *
- * @author Andrés Aquin
+ * @author Andres Aquin
  */
 public class Normal extends EntidadEducacion{
     private String area;
     
     public Normal(){
         super("Escuela de Veracruz",1958,"Privado");
-        this.area = "Técnico";
+        this.area = "Tecnico";
         this.NroProfesores = 4;
         this.prf[0]="Lic. Chamon";   this.prf[2]="Lic. Jimenez"; 
         this.prf[1]="Mg. Alvarez"; this.prf[3]="Lic. Gonzales"; 
@@ -25,8 +25,8 @@ public class Normal extends EntidadEducacion{
         this.est[3]="Marta";  
     }
 
-    public Normal(String area, String nombre, int añoFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
-        super(nombre, añoFundacion, tipo, NroProfesores, nroEstudiantes);
+    public Normal(String area, String nombre, int anioFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
+        super(nombre, anioFundacion, tipo, NroProfesores, nroEstudiantes);
         this.area = area;
     }
 

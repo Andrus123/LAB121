@@ -14,7 +14,7 @@ public class Colegio extends EntidadEducacion{
     
     public Colegio(){
         super("San Calixto",1935,"Privado");
-        this.turno = "Mañana";
+        this.turno = "Ma�ana";
         this.NroProfesores = 3;
         this.prf[0]="Lic. Diaz";   this.prf[2]="Lic. Jimenez"; 
         this.prf[1]="Lic. Oliver";    
@@ -26,8 +26,8 @@ public class Colegio extends EntidadEducacion{
         this.est[4]="Lorena";  
     }
 
-    public Colegio(String turno, String nombre, int añoFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
-        super(nombre, añoFundacion, tipo, NroProfesores, nroEstudiantes);
+    public Colegio(String turno, String nombre, int anioFundacion, String tipo, int NroProfesores, int nroEstudiantes) {
+        super(nombre, anioFundacion, tipo, NroProfesores, nroEstudiantes);
         this.turno = turno;
     }
 

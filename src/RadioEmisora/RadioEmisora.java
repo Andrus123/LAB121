@@ -17,7 +17,6 @@ public class RadioEmisora {
     private int anioFundacion;
     private int nroProgramas;
     private String[][] r = new String[50][3];
-    private int z;
     
 
     //A)
@@ -111,7 +110,7 @@ public class RadioEmisora {
         System.out.println("Radio emisora: ");
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Fundado en: " + this.anioFundacion);
-        System.out.println("Número de programas emitidos: " + this.nroProgramas);
+        System.out.println("Numero de programas emitidos: " + this.nroProgramas);
         System.out.println("   PROGRAMA:        HORAINICIO - HORAFINAL");
         for (int i = 0; i < this.nroProgramas; i++) {
             System.out.println((i + 1) + ".-" + this.r[i][0] + "\t" + this.r[i][1] + "\t" + this.r[i][2]);
