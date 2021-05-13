@@ -31,6 +31,7 @@ public class Principal {
             System.out.println("Son medicamentos para distintos propositos");
         }
         
+        System.out.println("\nEJERCICIO 1: ");
         //a) Instanciar una Farmacia con N medicamentos
         Farmacia f1 = new Farmacia("Farmacorp","Av. Prado",3);
         f1.mostrar();
@@ -39,6 +40,7 @@ public class Principal {
         //c) Mostrar los medicamentos para la tos
         f1.medTos();
         // EJERCICIO 2
+        System.out.println("\nEJERCICIO 2: ");
         //a) Instanciar un Objeto CadenaFarm y mostrar
         CadenaFarm cadf1 = new CadenaFarm();
         cadf1.mostrar();
@@ -47,11 +49,15 @@ public class Principal {
         //c) Agregar un nuevo Medicamento a la sucursal numero x
         cadf1.anadirMed(2);
         //d) Se cierra la Sucursal numero x, llevar sus medicamentos a la sucursalnumero Y
-       
+        cadf1.cerrarSucursal(2, 3);
         //EJERCICIO 3
+        System.out.println("\nEJERCICIO 3: ");
         //a) Instanciar un Objeto CadenaFarm y mostrar
+        CadenaFarm cadf2 = new CadenaFarm("Corporación Pfizer",3);
+        cadf2.mostrar();
         //b) Mostrar al Jefe de Personal de cada sucursal
-        cadf1.mostrarJefe();
-        //c) Mostrar
+        cadf2.mostrarJefe();
+        //c) Mostrar las sucursales que tienen el menor número de Personal
+        cadf2.personalSucursalmenor();
     }
 }

@@ -72,6 +72,22 @@ public class Farmacia {
 			}
 		}
 	}
+	public void eliminarMedicamentos() {
+		setNromedicamentos(0);
+	}
+	public void trasladoMedicamentos(int nromedtras) {
+		setNromedicamentos(this.nromedicamentos + nromedtras);
+	}
+	public void trasladoarraymedicamentos(Farmacia x, int n) {
+		for (int i = 0; i < getNromedicamentos(); i++) {
+			for (int j = 0; j < x.nromedicamentos; j++) {
+				if(i>=(getNromedicamentos()-n)) {
+					M[i] = x.M[j];
+				}
+			}
+		}
+	}
+	
 	public void mostrarJefe() {
 		P.mostrarJefe();
 	}
