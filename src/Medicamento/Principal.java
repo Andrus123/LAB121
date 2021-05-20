@@ -41,7 +41,7 @@ public class Principal {
         f1.medTos();
         // EJERCICIO 2
         System.out.println("\nEJERCICIO 2: ");
-        //a) Instanciar un Objeto CadenaFarm y mostrar
+        //a) Instanciar Sun Objeto CadenaFarm y mostrar
         CadenaFarm cadf1 = new CadenaFarm();
         cadf1.mostrar();
         //b) Mostrar los medicamentos para la tos, de la Sucursal x
