@@ -58,7 +58,6 @@ public class ArchRopa {
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println();
 			System.out.println("Fin Listado");
 		}finally {
 			aRopa.close();

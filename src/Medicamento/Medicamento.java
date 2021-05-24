@@ -9,7 +9,7 @@ package Medicamento;
  *
  * @author Andrés Aquin
  */
-public class Medicamento {
+public class Medicamento implements java.io.Serializable{
     protected String nombre;
     protected double precio;
     protected int cantidad;

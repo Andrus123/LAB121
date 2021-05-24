@@ -13,7 +13,7 @@ public class Juego implements Serializable{
 	}
 	
 	public void mostrar() {
-		System.out.println("Juego: "+getNombre()+" - "+" Fecha de Creacion: "+getFechaCreacion());
+		System.out.println("Juego: "+getNombre()+" | "+" Fecha de Creacion: "+getFechaCreacion());
 	}
 	void leer()
 	{

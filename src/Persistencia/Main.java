@@ -16,7 +16,8 @@ public class Main {
 								+"\n 1.CREAR "
 								+"\n 2.ADICIONAR "
 								+"\n 3.LISTAR "
-								+"\n 4. Salir");
+								+"\n 4.LISTAR POR AÑO"
+								+"\n 5. Salir");
 				op = sc.nextInt();
 				switch(op) {
 					case 1:
@@ -28,10 +29,15 @@ public class Main {
 					case 3:
 						arch.listar();
 						break;
+					case 4:
+					System.out.println("Ingrese el año");
+					String x = sc.next();
+						arch.mostrarJuegoX(x);
+						break;
 					default:
 						break;
 				}
-			} while (op!=4);
+			} while (op!=5);
 			//arch.crear();
 			//arch.agregar();
 //		arch.agregar();
