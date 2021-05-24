@@ -63,4 +63,20 @@ public class ArchMedicamento {
 			aMed.close();
 		}
 	}
+	public void medresfrios() throws ClassNotFoundException, IOException{
+		ObjectInputStream aMed = null;
+		try {
+			aMed = new ObjectInputStream(new FileInputStream(nomArch));
+			while(true) {
+				medicamento = new Medicamento();
+				medicamento = (Medicamento)aMed.readObject();
+				medicamento.mostrar();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Fin listado");
+		}finally {
+			aMed.close();
+		}
+	}
 }

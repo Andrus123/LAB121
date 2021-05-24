@@ -5,12 +5,16 @@
  */
 package Medicamento;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  *
  * @author AndrÃ©s Aquin
  */
 public class Principal {
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException{
         //a)
         Medicamento m1 = new Medicamento();
         m1.mostrar();
@@ -59,5 +63,33 @@ public class Principal {
         cadf2.mostrarJefe();
         //c) Mostrar las sucursales que tienen el menor número de Personal
         cadf2.personalSucursalmenor();
+        
+        System.out.println("\nEJERCICIO PERSISTENCIA #1");
+        try (Scanner sc = new Scanner(System.in)) {
+        	ArchMedicamento archmed = new ArchMedicamento("medicamentos.dat");
+        	
+        	int op;
+        	do {
+        		System.out.println("\tMENU"
+        				+"\n 1.CREAR "
+        				+"\n 2.ADICIONAR "
+        				+"\n 3.LISTAR "
+        				+"\n 4.MEDICAMENTOS PARA RESFRIOS"
+        				+"\n 5.MEDICAMENTOS PARA TOS CON MENOR PRECIO");
+        		op = sc.nextInt();
+        		switch(op) {
+        		case 1:
+        			archmed.Crear();
+        			break;
+        		case 2:
+        			archmed.Adicionar();
+        			break;
+        		case 3:
+        			archmed.Listar();
+        			break;
+        		case 4:
+        		}
+        	} while (op!=5);
+        }
     }
 }
