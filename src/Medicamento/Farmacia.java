@@ -1,7 +1,8 @@
 package Medicamento;
 
 
-public class Farmacia {
+public class Farmacia implements java.io.Serializable {
+	private int NroSucursal;
 	private String nombre; 
 	private String direccion;
 	private int nromedicamentos;
@@ -9,6 +10,7 @@ public class Farmacia {
 	private Personal P;
 	
 	public Farmacia() {
+		this.NroSucursal = 1;
 		this.nombre = "Farmacias Bolivia";
 		this.direccion = "Av. Mariscal Santa Cruz";
 		this.P = new Personal();
@@ -18,7 +20,7 @@ public class Farmacia {
 			M[i] = new Pastilla("Antigripal",560);
 			}
 			if(i%2!=0) {
-			M[i] = new Jarabe("Para tos",750);	
+			M[i] = new Jarabe("paraTos",750);	
 			}
 		}
 	}
@@ -33,13 +35,25 @@ public class Farmacia {
 			M[i] = new Pastilla("Antigripal",560);
 			}
 			if(i%2!=0) {
-			M[i] = new Jarabe("Para tos",750);	
+			M[i] = new Jarabe("paraTos",750);	
 			}
+		}
+	}
+	public void leer() {
+		System.out.println("N° de Sucursal: ");
+		setNroSucursal(Leer.datoInt());
+		System.out.println("Direccion: ");
+		setDireccion(Leer.dato());
+		System.out.println("N° de medicamentos: ");
+		setNromedicamentos(Leer.datoInt());
+		for (int i = 0; i < getNromedicamentos(); i++) {
+			M[i].leer();
 		}
 	}
 	
 	public void mostrar() {
 		System.out.println("\nFarmacia: "+getNombre());
+		System.out.println("N° de sucursal: "+getNroSucursal());
 		System.out.println("Direccion: "+getDireccion());
 		System.out.println("Personal: ");
 		this.P.mostrar();
@@ -59,15 +73,24 @@ public class Farmacia {
 	public void medTos() {
 		System.out.println("\nMedicamentos para tos con el menor precio: ");
 		for (int i = 0; i < getNromedicamentos(); i++) {
-			if(M[i].getTipo().equals("Para tos")) {
+			if(M[i].getTipo().equals("paraTos")) {
 				M[i].mostrar();
 			}
 		}
 	}
+	public String buscarMed(String x){
+		String y = "no";
+		for (int i = 0; i < getNromedicamentos(); i++) {
+			if(M[i].getNombre().equals(x)) {
+				return y = "si";
+			}
+		}
+		return y;
+	}
 	
 	public void BuscarTos() {
 		for (int i = 0; i < getNromedicamentos(); i++) {
-			if(M[i].getTipo()=="Para tos") {
+			if(M[i].getTipo().equals("paraTos")) {
 				M[i].mostrar();
 			}
 		}
@@ -95,6 +118,14 @@ public class Farmacia {
 		M[getNromedicamentos()] = new Medicamento();
 		M[getNromedicamentos()].leer();
 		this.nromedicamentos++;
+	}
+	
+	public int getNroSucursal() {
+		return NroSucursal;
+	}
+
+	public void setNroSucursal(int nroSucursal) {
+		NroSucursal = nroSucursal;
 	}
 
 	public String getNombre() {

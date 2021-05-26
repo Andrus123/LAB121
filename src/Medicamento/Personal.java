@@ -1,6 +1,6 @@
 package Medicamento;
 
-public class Personal {
+public class Personal implements java.io.Serializable {
 	private int nropersonas;
 	private String[][] P = new String[40][2];
 	

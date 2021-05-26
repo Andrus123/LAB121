@@ -67,7 +67,6 @@ public class Principal {
         System.out.println("\nEJERCICIO PERSISTENCIA #1");
         try (Scanner sc = new Scanner(System.in)) {
         	ArchMedicamento archmed = new ArchMedicamento("medicamentos.dat");
-        	
         	int op;
         	do {
         		System.out.println("\tMENU"
