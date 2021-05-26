@@ -75,7 +75,8 @@ public class Principal {
         				+"\n 2.ADICIONAR "
         				+"\n 3.LISTAR "
         				+"\n 4.MEDICAMENTOS PARA RESFRIOS"
-        				+"\n 5.MEDICAMENTOS PARA TOS CON MENOR PRECIO");
+        				+"\n 5.MEDICAMENTOS PARA TOS CON MENOR PRECIO"
+        				+"\n 6. Salir");
         		op = sc.nextInt();
         		switch(op) {
         		case 1:
@@ -88,8 +89,14 @@ public class Principal {
         			archmed.Listar();
         			break;
         		case 4:
+        			archmed.medresfrios();
+        			break;
+        		case 5:
+        			archmed.tosbarato();
+        		default:
+        			break;
         		}
-        	} while (op!=5);
+        	} while (op!=6);
         }
     }
 }

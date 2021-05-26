@@ -67,7 +67,9 @@ public class Medicamento implements java.io.Serializable{
         System.out.println("Precio: ");
         setPrecio(Leer.datoDouble());
         System.out.println("Cantidad: ");        
-        setCantidad(Leer.datoInt());    
+        setCantidad(Leer.datoInt());
+        System.out.println("Tipo:  ( resfrios | paraTos | painkiller | Otros)");
+        setTipo(Leer.dato());
     }
     public void mostrar(){
         System.out.println("Medicamento: " + getNombre());

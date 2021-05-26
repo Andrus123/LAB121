@@ -13,6 +13,7 @@ import Persistencia.AddObjectOutputStream;
 public class ArchMedicamento {
 	private String nomArch;
 	private Medicamento medicamento;
+	public Medicamento medbarato;
 	
 	public ArchMedicamento(String nom) {
 		this.nomArch = nom;
@@ -70,13 +71,37 @@ public class ArchMedicamento {
 			while(true) {
 				medicamento = new Medicamento();
 				medicamento = (Medicamento)aMed.readObject();
-				medicamento.mostrar();
+				if(medicamento.getTipo().equals("resfrios")) {
+					medicamento.mostrar();
+				}
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Fin listado");
 		}finally {
 			aMed.close();
+		}
+	}
+	public void tosbarato() throws ClassNotFoundException, IOException{
+		double preciomin = 100;
+		ObjectInputStream aMed = null;
+		try {
+			aMed = new ObjectInputStream(new FileInputStream(nomArch));
+			while(true) {
+				medicamento = new Medicamento();
+				medicamento = (Medicamento)aMed.readObject();
+				if(medicamento.getPrecio()<preciomin && medicamento.getTipo().equals("paraTos")) {
+					medbarato = medicamento;
+					preciomin = medicamento.getPrecio();
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Medicamento de tos más barato: ");
+			medbarato.mostrar();
+			System.out.println("Fin Metodo");
+		}finally {
+			aMed.close();	
 		}
 	}
 }
