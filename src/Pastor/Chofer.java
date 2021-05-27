@@ -21,6 +21,7 @@ public class Chofer extends Cuenta{
 	}
 	
 	public void leer() {
+		System.out.println("Chofer: ");
 		super.leer();
 		System.out.println("Años de experiencia: ");
 		setAñosExp(Leer.datoInt());

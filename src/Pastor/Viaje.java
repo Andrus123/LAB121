@@ -25,7 +25,7 @@ public class Viaje {
 	}
 	
 	public void leer() {
-		System.out.println("Tipo de Viaje : Out(FUERA DE LA URBE)/ In(DENTRO DE LA URBE)");
+		System.out.println("\nTipo de Viaje : Out(FUERA DE LA URBE)/ In(DENTRO DE LA URBE)");
 		setTipo(Leer.dato());
 		System.out.println("Destino: ");
 		setDestino(Leer.dato());
@@ -37,13 +37,30 @@ public class Viaje {
 		p.leer();
 	}
 	
+	public void MedioTransporte() {
+		System.out.println("Ingrese tipo de VIAJE: ");
+		String tip = Leer.dato();
+		if(tip.equals("Out")) {
+			Empresa et = new Empresa();
+			System.out.println("Empresa seleccionada: ");
+			System.out.println(et.getNomEmpresa());
+		}
+		if(tip.equals("In")) {
+			Particular p1 = new Particular();
+			System.out.println("Particular Seleccionado: ");
+			p1.mostrar();
+		}
+	}
+	
 	public void mostrar() {
-		System.out.println("Tipo de viaje: "+getTipo());
+		System.out.println("\nTipo de viaje: "+getTipo());
 		System.out.println("DESTINO: "+getDestino());
 		System.out.println("TARIFA: "+getTarifa());
 		r.mostrar();
 		p.mostrar();
 	}
+	
+	
 
 	public String getTipo() {
 		return tipo;

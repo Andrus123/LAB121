@@ -7,7 +7,6 @@ public class Empresa {
 	private String tipoviaje;
 	private Vehiculo[] v = new Vehiculo[50];
 	private Chofer[] c = new Chofer[50];
-	private Ruta[] r = new Ruta[50];
 	
 	public Empresa() {
 		this.nomEmpresa = "Bolivar";
@@ -19,12 +18,9 @@ public class Empresa {
 		for (int i = 0; i < nroChoferes; i++) {
 			c[i] = new Chofer();
 		}
-		for (int i = 0; i < r.length; i++) {
-			r[i] = new Ruta();
-		}
 	}
 
-	public Empresa(String nomEmpresa, int nroVehiculos,int nroChoferes, String tipoviaje, Vehiculo[] v, Chofer[] c, Ruta[] r) {
+	public Empresa(String nomEmpresa, int nroVehiculos,int nroChoferes, String tipoviaje, Vehiculo[] v, Chofer[] c) {
 		super();
 		this.nomEmpresa = nomEmpresa;
 		this.nroVehiculos = nroVehiculos;
@@ -35,9 +31,6 @@ public class Empresa {
 		}
 		for (int i = 0; i < nroChoferes; i++) {
 			c[i] = new Chofer();
-		}
-		for (int i = 0; i < r.length; i++) {
-			r[i] = new Ruta();
 		}
 	}
 	
@@ -60,7 +53,7 @@ public class Empresa {
 		}
 	}
 	public void mostrar() {
-		System.out.println("Empresa: "+getNomEmpresa());
+		System.out.println("\nEmpresa: "+getNomEmpresa());
 		System.out.println("# de Vehículos: "+getNroVehiculos());
 		System.out.println("# de Choferes: "+getNroChoferes());
 		System.out.println("Tipo de viajes: "+getTipoviaje());

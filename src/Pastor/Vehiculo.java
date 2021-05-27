@@ -38,7 +38,7 @@ public class Vehiculo {
 	}
 	
 	public void mostrar() {
-		System.out.println("Licencia: "+getLicencia());
+		System.out.println("\nLicencia: "+getLicencia());
 		System.out.println("Dueño: "+getDueño());
 		System.out.println("Capacidad: "+getCapacidad());
 		System.out.println("Marca: "+getMarca());

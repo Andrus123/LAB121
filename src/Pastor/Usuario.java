@@ -20,6 +20,7 @@ public class Usuario extends Cuenta{
 	}
 	
 	public void leer() {
+		System.out.println("Usuario: ");
 		super.leer();
 		System.out.println("Puntos: ");
 		setPuntos(Leer.datoInt());
