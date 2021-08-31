@@ -1,10 +1,12 @@
 package Pastor;
 
-public class Chofer extends Cuenta{
+import java.io.Serializable;
+
+public class Chofer extends Cuenta implements Serializable{
 	private int añosExp;
 	private int reputación;
 	
-	public Chofer() {
+	public Chofer(){
 		super();
 		this.ci = 322462;
 		this.nombre = "Carlos Fernandez";

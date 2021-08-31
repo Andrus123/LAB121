@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Particular extends Chofer{
+import java.io.Serializable;
+
+public class Particular extends Chofer implements Serializable{
 	private int puntaje;
 	private Vehiculo v;
 	

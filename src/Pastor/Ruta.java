@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Ruta {
+import java.io.Serializable;
+
+public class Ruta implements Serializable{
 	private String tipo;
 	private String ruta;
 	private String monitoreo;

@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Empresa {
+import java.io.Serializable;
+
+public class Empresa implements Serializable{
 	private String nomEmpresa;
 	private int nroChoferes;
 	private int nroVehiculos;
@@ -11,6 +13,7 @@ public class Empresa {
 	public Empresa() {
 		this.nomEmpresa = "Bolivar";
 		this.nroVehiculos = 4;
+		this.nroChoferes = 1;
 		this.tipoviaje = "Bus-Trip";
 		for (int i = 0; i < nroVehiculos; i++) {
 			v[i] = new Vehiculo();

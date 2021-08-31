@@ -9,13 +9,13 @@ package Tarea1;
  *
  * @author andru
  */
-public class Capicua {
+public class Capicuas {
     private int n;
     private int aux;
     private int inverso;
     private int cifra;
     
-    public Capicua(){
+    public Capicuas(){
         this.n = 0;
         this.aux= 0;
         this.inverso = 0;
@@ -33,7 +33,7 @@ public class Capicua {
     public void incapicua(){
         do{
         System.out.println("Introduzca un numero mayor a 10:");
-        this.n = Leer.datoInt();
+        this.n = Leer1.datoInt();
         }while(n<10);
         
         //se le da la vuelta al numero

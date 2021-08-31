@@ -9,11 +9,11 @@ package Tarea1;
  *
  * @author andru
  */
-public class Dividir {
+public class Dividir1 {
     private int a;
     private int b;
     
-    public Dividir(){
+    public Dividir1(){
         this.a=0;
         this.b=0;
     }
@@ -35,8 +35,8 @@ public class Dividir {
     }
     public void leer(){
         System.out.println("Ingrese el valor de a y b: ");
-        this.a = Leer.datoInt();
-        this.b= Leer.datoInt();
+        this.a = Leer1.datoInt();
+        this.b= Leer1.datoInt();
     }
     public void dividirenteros(){
         int c=0;

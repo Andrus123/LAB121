@@ -11,13 +11,13 @@ import Juego.Leer;
  *
  * @author andru
  */
-public class Grupo {
+public class Grupos {
     private String nombreGrupo;
     private int nroIntegrantes;
     private String [] nom = new String [50];
     private String [] edad = new String [50];
     
-    public Grupo(){
+    public Grupos(){
         this.nombreGrupo = "Bolivar";
         this.nroIntegrantes = 7;
         this.nom[0] = "Jhon";
@@ -37,7 +37,7 @@ public class Grupo {
         this.edad[6] = "24";
     }
 
-    public Grupo(String nombreGrupo, int nroIntegrantes) {
+    public Grupos(String nombreGrupo, int nroIntegrantes) {
         this.nombreGrupo = nombreGrupo;
         this.nroIntegrantes = nroIntegrantes;
         this.nom[0] = "Juan";
@@ -101,7 +101,7 @@ public class Grupo {
         System.out.println("Integrante: " + this.nom[i]);    
         }
     }
-    public void dividir(Grupo g1, Grupo g2){
+    public void dividir(Grupos g1, Grupos g2){
         for(int i=0; i<(this.nroIntegrantes)/2;i++){
             System.out.println("Integrante: " + this.nom[i]);
            

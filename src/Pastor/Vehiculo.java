@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Vehiculo {
+import java.io.Serializable;
+
+public class Vehiculo implements Serializable{
 	private String licencia;
 	private String dueño;
 	private int capacidad;

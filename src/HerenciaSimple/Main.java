@@ -9,7 +9,7 @@ package HerenciaSimple;
  *
  * @author andru
  */
-public class Principal {
+public class Main {
     public static void main(String[] args){
         Publicacion pu1 = new Publicacion("Bended", 170.89);
         

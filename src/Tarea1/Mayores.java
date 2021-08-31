@@ -9,7 +9,7 @@ package Tarea1;
  *
  * @author andru
  */
-public class Mayor {
+public class Mayores {
 
     //Realizarunalgoritmoparadeterminarelmayordedosnúmeros
     private int num1;
@@ -31,16 +31,16 @@ public class Mayor {
         this.num2 = num2;
     }
 
-    public Mayor() {
+    public Mayores() {
         num1 = 0;
         num2 = 0;
     }
 
     public void leer() {
         System.out.println("Ingrese el primer número: ");
-        this.num1 = Leer.datoInt();
+        this.num1 = Leer1.datoInt();
         System.out.println("Ingrese el segundo número: ");
-        this.num2 = Leer.datoInt();
+        this.num2 = Leer1.datoInt();
     }
     public void comparar(){
         if (num1 == num2){

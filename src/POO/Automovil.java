@@ -85,7 +85,7 @@ public class Automovil {
         setModelo(Leer.dato());
         System.out.println("Placa: ");
         setPlaca(Leer.dato());
-        System.out.println("Año: ");
+        System.out.println("Anio: ");
         setAnio(Leer.datoInt());
     }
 
@@ -93,7 +93,7 @@ public class Automovil {
         System.out.println("Marca: " + getMarca());
         System.out.println("Modelo: " + getModelo());
         System.out.println("Placa: " + getPlaca());
-        System.out.println("Año: " + getAnio());
+        System.out.println("Anio: " + getAnio());
     }
 
     public static void verificar(Automovil x, Automovil y, Automovil z, Automovil w) {
@@ -135,7 +135,7 @@ public class Automovil {
             max = w.getAnio();
             maxaut = w;
         }
-        System.out.println("\nEl carro más reciente es: ");
+        System.out.println("\nEl carro mas reciente es: ");
         maxaut.mostrar();
     }
     public static void Vermarca(Automovil x, Automovil y, Automovil z, Automovil w, String m){

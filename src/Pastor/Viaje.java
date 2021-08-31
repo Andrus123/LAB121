@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Viaje {
+import java.io.Serializable;
+
+public class Viaje implements Serializable{
 	private String tipo;
 	private String destino;
 	private double tarifa;

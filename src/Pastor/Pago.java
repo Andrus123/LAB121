@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Pago {
+import java.io.Serializable;
+
+public class Pago implements Serializable{
 	private String moneda;
 	private int ticket;
 	private double monto;

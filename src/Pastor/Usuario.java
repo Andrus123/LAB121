@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Usuario extends Cuenta{
+import java.io.Serializable;
+
+public class Usuario extends Cuenta implements Serializable{
 	private int puntos;
 	
 	

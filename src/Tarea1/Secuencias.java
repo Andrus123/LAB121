@@ -9,7 +9,7 @@ package Tarea1;
  *
  * @author andru
  */
-public class Secuencia {
+public class Secuencias {
     private int n;
 
     public int getN() {
@@ -20,12 +20,12 @@ public class Secuencia {
         this.n = n;
     }
     
-    public Secuencia(){
+    public Secuencias(){
         n=0;
     }
     public void leer(){
         System.out.println("Ingrese cifra para la secuencia: ");
-        this.n = Leer.datoInt();
+        this.n = Leer1.datoInt();
     }
     public void generasecuencia(){
         for(int i=1; i<=n; i++){

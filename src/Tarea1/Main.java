@@ -9,27 +9,27 @@ package Tarea1;
  *
  * @author andru
  */
-public class Principal {
+public class Main {
 
     public static void main(String[] args) {
         //Inciso A
-        Mayor m1 = new Mayor();
+        Mayores m1 = new Mayores();
         m1.leer();
         m1.comparar();
         //Inciso B
-        Secuencia s1 = new Secuencia();
+        Secuencias s1 = new Secuencias();
         s1.leer();
         s1.generasecuencia();
         //Inciso C
-        Dividir d1 = new Dividir();
+        Dividir1 d1 = new Dividir1();
         d1.leer();
         d1.dividirenteros();
         //Inciso D
-        Primo p1 = new Primo();
+        Primos p1 = new Primos();
         p1.leer();
         p1.esprimo();
         //Inciso E
-        Capicua c1 = new Capicua();
+        Capicuas c1 = new Capicuas();
         c1.incapicua();
     }
 }

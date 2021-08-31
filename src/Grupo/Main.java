@@ -9,10 +9,10 @@ package Grupo;
  *
  * @author andru
  */
-public class Principal {
+public class Main {
     public static void main(String[] args){
-        Grupo g1 = new Grupo();
-        Grupo g2 = new Grupo("Tigre",5);
+        Grupos g1 = new Grupos();
+        Grupos g2 = new Grupos("Tigre",5);
         
         g1.leer();
         g2.leer();
@@ -20,6 +20,5 @@ public class Principal {
         g1.mostrar();
         g2.mostrar();
         
-        g1.dividir(g1,g2);
     }
 }

@@ -1,6 +1,8 @@
 package Pastor;
 
-public class Cuenta {
+import java.io.Serializable;
+
+public class Cuenta implements Serializable{
 	protected int ci;
 	protected String nombre;
 	protected String correo;

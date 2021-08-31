@@ -2,7 +2,7 @@ package Tarea1;
 
 
 import java.io.*;
-public class Leer
+public class Leer1
 {
     public static String dato ()
     {

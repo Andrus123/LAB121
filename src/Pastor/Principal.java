@@ -1,7 +1,10 @@
 package Pastor;
 
+
+
 public class Principal {
-	public static void main(String[] args) {
+	public static void main(String[] args){
+		
 		//Registro de empresa
 		Empresa e1 = new Empresa();
 		//e1.leer();

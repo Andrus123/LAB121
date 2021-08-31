@@ -9,12 +9,12 @@ package Tarea1;
  *
  * @author andru
  */
-public class Primo {
+public class Primos {
 
     private int n;
     private int c;
 
-    public Primo() {
+    public Primos() {
         this.n = 0;
         this.c = 0;
     }
@@ -29,7 +29,7 @@ public class Primo {
 
     public void leer() {
         System.out.println("Ingrese el número a verificar si es número primo o no: ");
-        this.n = Leer.datoInt();
+        this.n = Leer1.datoInt();
     }
 
     public void esprimo() {
